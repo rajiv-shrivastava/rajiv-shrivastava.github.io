@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rajiv Shrivastava</title>
+    <description>I am a tech blogger who writes posts to  help the web development community
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 16 Mar 2016 00:50:19 +0530</pubDate>
+    <lastBuildDate>Wed, 16 Mar 2016 00:50:19 +0530</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>How to integrate a hindi textarea in the website which convert english typed words to hindi</title>
+        <description>&lt;h2&gt; Hi developers &lt;/h2&gt;
+
+&lt;p&gt;We often get some clients who want to us to add a form field in our website with hindi typing fuctionality.&lt;/p&gt;
+
+&lt;p&gt;But there may be a possibilty that the user also know which engish aplpabet key is there for a particular hindi word.&lt;/p&gt;
+
+&lt;p&gt;A sample screenshot&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;right click on image and open it new tab to view actual image&lt;/code&gt;
+&lt;img src=&quot;/images/hindi-textbox.png&quot; style=&quot;height:350px;width:700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here i am using a simple api provided by &lt;a hre=&quot;http://www.hinkhoj.com/&quot;&gt; Hindkhoj &lt;/a&gt;  which will dynamically add a text field to your app.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Add this stylesheet to the page where you have to your html file.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://www.hinkhoj.com/common/css/keyboard.css&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Add this  javascript file in head section.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://www.hinkhoj.com/common/js/keyboard.js&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+In you html body add this code.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;javascript&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;CreateCustomHindiTextArea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;id 1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;अपऩा मेसेज यहा लिखे&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;That’s all run the code a custom textarea is there with easy hindi typing.&lt;/p&gt;
+
+&lt;p&gt;Type in some words inside textarea it will convert it to hindi.&lt;code class=&quot;highlighter-rouge&quot;&gt;Eg. If you type a == अ&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Similarly if you type p == प and with some practice you are able to write whole sentences in hindi&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 10 Mar 2016 22:21:53 +0530</pubDate>
+        <link>/jekyll/update/2016/03/10/hindi-textbox.html</link>
+        <guid isPermaLink="true">/jekyll/update/2016/03/10/hindi-textbox.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
