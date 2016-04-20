@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
-
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Rajiv Shrivastava</title>
-  <meta name="description" content="I am a tech blogger who writes posts to  help the web development community
-">
+  <title>Customized authentication with Ruby on Rails</title>
+  <meta name="description" content=" Hi developers ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/jekyll/update/2016/03/10/custom-login-with-ruby-on-rails.html">
   <link rel="alternate" type="application/rss+xml" title="Rajiv Shrivastava" href="/feed.xml">
 </head>
 
@@ -63,33 +58,54 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Customized authentication with Ruby on Rails</h1>
+    <p class="post-meta"><time datetime="2016-03-10T22:21:53+05:30" itemprop="datePublished">Mar 10, 2016</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Mar 10, 2016</span>
+  <div class="post-content" itemprop="articleBody">
+    <h2> Hi developers </h2>
 
-        <h2>
-          <a class="post-link" href="/jekyll/update/2016/03/10/Customized-authentication-with-ruby-on-rails.html">Customized authentication with Ruby on Rails</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 10, 2016</span>
+<h3> After a long time i am back to write the post </h3>
 
-        <h2>
-          <a class="post-link" href="/jekyll/update/2016/03/10/hindi-textbox.html">How to integrate a hindi textarea in the website which convert english typed words to hindi</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>A sample screenshot</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p><br /> <code class="highlighter-rouge">right click on image and open it new tab to view actual image</code>
+<img src="/images/hindi-textbox.png" style="height:350px;width:700" /></p>
 
-</div>
+<p>Here i am using a simple api provided by <a hre="http://www.hinkhoj.com/"> Hindkhoj </a>  which will dynamically add a text field to your app.</p>
+
+<p><br />
+Add this stylesheet to the page where you have to your html file.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="n">type</span><span class="o">=</span><span class="s2">"text/css"</span><span class="n">href</span><span class="o">=</span><span class="s2">"http://www.hinkhoj.com/common/css/keyboard.css"</span> <span class="o">/&gt;</span></code></pre></figure>
+
+<p><br /></p>
+
+<p>Add this  javascript file in head section.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"> <span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">"http://www.hinkhoj.com/common/js/keyboard.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script&gt;</span></code></pre></figure>
+
+<p><br /><br /><br />
+In you html body add this code.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">script</span> <span class="n">language</span><span class="o">=</span><span class="s2">"javascript"</span><span class="o">&gt;</span>
+
+<span class="no">CreateCustomHindiTextArea</span><span class="p">(</span><span class="s2">"id 1"</span><span class="p">,</span><span class="s2">"अपऩा मेसेज यहा लिखे"</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="kp">true</span><span class="p">);</span>
+<span class="o">&lt;</span><span class="sr">/script&gt;</span></code></pre></figure>
+
+<p>That’s all run the code a custom textarea is there with easy hindi typing.</p>
+
+<p>Type in some words inside textarea it will convert it to hindi.<code class="highlighter-rouge">Eg. If you type a == अ</code></p>
+
+<p><code class="highlighter-rouge">Similarly if you type p == प and with some practice you are able to write whole sentences in hindi</code></p>
+
+
+  </div>
+
+</article>
 
       </div>
     </div>
