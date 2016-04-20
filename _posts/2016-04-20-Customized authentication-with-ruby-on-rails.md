@@ -67,7 +67,7 @@ rails g model Admin name:string email:string password_digest:string
  If you want to name the model User replace `Admin` with  `User`
   
 
-Migrate the databse
+Migrate the database
 
 {% highlight html%} rake db:migrate {% endhighlight %}
 
@@ -84,7 +84,7 @@ class Admin < ActiveRecord::Base
 end
 ```
 
-Adding ``has_secure_password`` will encrypt the password before saving.sle
+Adding ``has_secure_password`` will encrypt the password before saving.
 
 
 <hr> <br>
@@ -117,13 +117,12 @@ Then run {% highlight html %} rake db:seed {% endhighlight %}
 <h4> Encrypt the password </h4>
 
 Open a new terminal go to app location `path_to_app/custom_login`
-and open rails console in it usng command `rails console`
+and open rails console in it usng command <kbd>rails console</kbd>
 
 Then run 
 {% highlight html %} Admin.first{% endhighlight %} 
 
-We have use Admin.first beacuse we have only one entry this will display the details.
-It looks like this
+We have use Admin.first beacuse we have only one entry. This commnad will display the details.It looks like this
 
 <p class="well"> 2.3.0 :001 > Admin.first Admin Load (0.2ms)  SELECT  "admins".* FROM "admins"  ORDER BY "admins"."id" ASC LIMIT 1=> #<Admin id: 1, name: "demo", email: "demo@gmail.com", password_digest: "password", created_at: "2016-04-19 17:45:08", updated_at: "2016-04-19 19:12:35"> 
 2.3.0 :002 > </p>
@@ -153,9 +152,9 @@ Now again run
 2.3.0 :003 > 
 </p>
 
- I you look at `password_digest:` it is now encrypted. 
+ If you look at `password_digest:` it is now encrypted. 
 
- Type <kbd>exit</kbd> to quit the terminal. 
+ Type <kbd>exit</kbd> to quit the console. 
 
 
 
